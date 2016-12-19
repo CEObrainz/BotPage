@@ -211,8 +211,10 @@ img:hover {
 	margin:0 36px 0 0;
 	color: #FC3;
 	text-align: left;
-	background-image: url(../images/bg-featured-text-content.png);
+	background-image: none;
 	font-size: 18px;
+	background-attachment: scroll;
+	background-repeat: repeat;
 }
 #page #body div#content p {
 	font-family:Georgia;
@@ -221,7 +223,6 @@ img:hover {
 	text-align:justify;
 	line-height:24px;
 	margin-bottom:25px;
-	background-image: url(../images/bg-featured-text-content.png);
 	background-size: cover;
 }
 #page #body div#content p a {
@@ -766,7 +767,7 @@ img:hover {
 }
 #page #body #content h2 {
 	text-align: left;
-	color: #FFAF1D;
+	color: #9F1110;
 }
 #page #body #content ul li p {
 	font-size: 18px;
@@ -776,4 +777,10 @@ img:hover {
 }
 #page #body #content {
 	color: #E2CC50;
+}
+#page #body #content h4 {
+	color: #9F1110;
+}
+#page #body #content h1 {
+	color: #9F1110;
 }
