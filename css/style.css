@@ -191,8 +191,19 @@ img:hover {
 	display:block;
 	margin:0 auto;
 }
+#page #body div.featured div.section a.home {
+	background:url("../images/button2.png") no-repeat scroll 0 -98px transparent;
+	text-decoration:none;
+	width:186px;
+	height:48px;
+	display:block;
+	margin:0 auto;
+}
 #page #body div.featured div.section a.readmore:hover {
 	background:url("../images/button.png") no-repeat scroll 0 0 transparent;
+}
+#page #body div.featured div.section a.home:hover {
+	background:url("../images/button2.png") no-repeat scroll 0 0 transparent;
 }
 #page #body div#content {
 	width:630px;
@@ -241,7 +252,26 @@ img:hover {
 	margin:0 0 15px 0;
 }
 #page #body div#sidebar a.readmore:hover {
-	background:transparent url("../images/button.png") no-repeat scroll 0 -196px;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(../images/button.png);
+	background-repeat: no-repeat;
+	background-position: 0 -196px;
+}
+#page #body div#sidebar .home {
+	background:transparent url("../images/button2.png") no-repeat scroll 0 -312px;
+	text-decoration:none;
+	width:222px;
+	height:66px;
+	display:block;
+	margin:0 0 15px 0;
+}
+#page #body div#sidebar a.home:hover {
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(../images/button%202.png);
+	background-repeat: no-repeat;
+	background-position: 0 -196px;
 }
 #page #body div#sidebar ul.connect {
 	margin:0;
@@ -484,6 +514,17 @@ img:hover {
 #page #body div.content ul li div a.readmore:hover {
 	background:url("../images/button.png") no-repeat scroll 0 -196px transparent;
 }
+#page #body div.content ul li div a.home {
+	background:url("../images/button2.png") no-repeat scroll 0 -312px transparent;
+	display:block;
+	height:66px;
+	margin:25px 0 15px 0;
+	text-decoration:none;
+	width:222px;
+}
+#page #body div.content ul li div a.home:hover {
+	background:url("../images/button2.png") no-repeat scroll 0 -196px transparent;
+}
 #page #body div.content ul.blog {
 	list-style-type:none;
 	margin:30px 0 0 0;
@@ -558,6 +599,22 @@ img:hover {
 	display:block;
 }
 #page #body div.content ul.blog li a.readmore:hover {
+	font-family:Georgia;
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+	color:#ff9e3f;
+}
+#page #body div.content ul.blog li a.home {
+	font-family:Georgia;
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+	color:#ff3f3f;
+	margin:30px 0 0 0;
+	display:block;
+}
+#page #body div.content ul.blog li a.home:hover {
 	font-family:Georgia;
 	font-size:14px;
 	font-weight:bold;
