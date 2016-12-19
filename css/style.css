@@ -760,3 +760,6 @@ img:hover {
 #page #body #content p {
 	color: #936;
 }
+#page #body #sidebar p .readmore2 {
+	background-image: url(../images/button%202.png);
+}
