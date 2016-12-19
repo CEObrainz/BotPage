@@ -209,7 +209,7 @@ img:hover {
 	width:630px;
 	float:left;
 	margin:0 36px 0 0;
-	color: #FFAF1D;
+	color: #FC3;
 	text-align: left;
 	background-image: url(../images/bg-featured-text-content.png);
 	font-size: 18px;
@@ -359,7 +359,7 @@ img:hover {
 }
 #page #body div#content ul li p {
 	font-family:Georgia;
-	font-size:14px;
+	font-size:18px;
 	color:#FFCC25;
 	margin:0 0 30px 0;
 }
@@ -767,4 +767,13 @@ img:hover {
 #page #body #content h2 {
 	text-align: left;
 	color: #FFAF1D;
+}
+#page #body #content ul li p {
+	font-size: 18px;
+}
+#page #body #content {
+	color: #FC3;
+}
+#page #body #content {
+	color: #E2CC50;
 }
