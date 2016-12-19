@@ -209,8 +209,8 @@ img:hover {
 	width:630px;
 	float:left;
 	margin:0 36px 0 0;
-	color: #FFF;
-	text-align: center;
+	color: #FFAF1D;
+	text-align: left;
 	background-image: url(../images/bg-featured-text-content.png);
 }
 #page #body div#content p {
@@ -762,4 +762,8 @@ img:hover {
 }
 #page #body #sidebar p .readmore2 {
 	background-image: url(../images/button%202.png);
+}
+#page #body #content h2 {
+	text-align: left;
+	color: #FFAF1D;
 }

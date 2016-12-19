@@ -19,7 +19,40 @@ a:visited {
 		<div id="header"></div>
 		<div id="body">
 		  <div id="content">
-            <p>Nothing is here yet.....<a href="index.html">go home!</a><br>
+            <p>Nothing is here yet.....<a href="index.html">go home!</a></p>
+            <p>Luckily, installation is rather easy. Server owners can use the links provided for both bots and simply add them to their servers. Albedo was first designed to be an entertainment bot, however as time passed and server owners requested more features this bot slowly become both a social bot and a utility bot.</p>
+            <p>The social elements to Albedo do not require setting up, most of these will be pre-set by the Bot Owner and require little to no tweaking. This page will instead detail and outline how to properly set up the utility and security related features that Albedo allows Admins to use. Modules will be listed in Alphabetical order since there is no set way that things should be set up. If at any time you are unable to follow the instructions or you have run into a problem not listed here use the<a href="https://discord.gg/dRrsA7Q"> support server</a> or contact the bot owner directly.</p>
+            <h2>Antilink</h2>
+            <p>This module allows you to prevent normal users from posting Discord Link to other servers. This is useful in scenarios where you want to allow links being posted but you don't allow server advertising. The settings allow you to toggle the feature on/off, toggle whether users get sent a private message when their post is deleted as well as setting the message that's sent.</p>
+            <p>By default the toggle and toggledm options are set to false. This means you'll have to manually turn them on if you wish to use this feature.</p>
+            <h2>Level</h2>
+            <p>Like most bots Albedo has her own internal levelling system. Here you can set the rate that users level up and whether they earn ranks reaching certain levels. The SC (Sever Config), CC (Channel Config) and LC (Level Config) are all tools to help set up how you want your server to work.</p>
+            <h4>SC (Sever Config)</h4>
+            <p>The Server Configuration options allow you to control global variables for your entire discord server. By default this feature is off , so to allow members to level up you'll need to use the toggle command (e.g. Albedo SC toggle). However it's recommend this be done after you have finished setting things up.</p>
+            <p>The severEXP sub-command allows you to set up how much XP is gained per message. By default it's set to 1. It is recommended that you set this value in such a way that reaching the highest level takes a fair amount of time, giving users an incentive to stay active.</p>
+            <p>The serverCD is used to help prevent users from spamming. This value is set to 60 seconds by default and has a lower custom limit of 5 seconds to prevent abuse.</p>
+            <p>The ranktoggle command is provided so that admins can assign whether certain roles are kept when reaching the next level. By default all roles are set to True, so that when a user levels up they they existing roles. However you may not want that, for example Level 2 giving users the role Copper and Level 3 awarding Silver. In this scenario both the Copper and Silver roles would be toggled to False so that a level up would remove the old role and add the new one, instead of having both Copper and Silver. Of course this is up to the Server Owners discretion.</p>
+            <h4>CC (Channel Config)</h4>
+            <p>Similar to the SC group the Channel Configuration commands allows you to specify unique settings for individual channels. Of course the same limits apply here that the SC commands imposed. The channelCD and channelEXP commands work exactly like their server counterparts.</p>
+            <p>The cp command is used to determine whether you want to give the channel unique settings. By default it's set to False. </p>
+            <p>The togglechannel command will enable or disable the channel, allowing or preventing the gain of exp. This requries the cp command to be set to True and is on by default.</p>
+            <h4>LC (Level Config)</h4>
+            <p>The Level configuration commands are simple and easy to use. They allow you to specify the xp needed to reach a level as well as the rank that is earned at certain levels. There are 100 levels that can be used, anything more is blocked by the bot.</p>
+            <p>The getlevel command  allows you to see the current configuration for the input level. Showing XP needed and Rank (role) gained.</p>
+            <p>The rank command allows you to specify what rank is gained at certain levels. By default this is set to None but valid Discord Roles can be used. Note, be careful to update this command when roles are renamed or deleted.</p>
+            <p>The xp command allows you to determine the xp needed to reach a certain level. When using this command the bot should prevent admins from setting an xp amount lower than the previous level.</p>
+            <h4>Other Commands</h4>
+            <p>The P2W command allows users to quickly level up without waiting for the cooldown. This command will only work if the user's level is incorrect based on the current XP. </p>
+            <p>The addXP, removeXP, setXP commands allows admins and mods to modify the XP values of users. The setLevel command works in the same way.</p>
+            <p>The updateroles command should only be used in case of errors. If a problem persists afterwards please contact the bot owner.</p>
+            <h2>Logset</h2>
+            <p>This module allows you to log changes on your server. The following can currently be logged:</p>
+            <p>- Deleted Messages<br>
+              - Edited Messages<br>
+              - Role Changes
+            </p>
+            <p>By default the log settings are turned off and need to be turned on with their respective toggle commands (e.g. Albedo logset deleteToggle). With all the log options the bot will require that a channel be specified first for logging.</p>
+            <p><br>
             </p>
           </div>
 			<div id="sidebar">
