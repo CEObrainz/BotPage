@@ -29,7 +29,7 @@ img:hover {
 }
 #page div#header {
 	width:950px;
-	height:275px;
+	height:500px;
 	margin:0 auto;
 	text-align:center;
 	position:relative;
@@ -101,6 +101,7 @@ img:hover {
 	margin:0 auto;
 	overflow:hidden;
 	padding:10px 0;
+	background-size: cover;
 }
 #page #body div.featured {
 	width:884px;
@@ -199,6 +200,7 @@ img:hover {
 	margin:0 36px 0 0;
 	color: #FFF;
 	text-align: center;
+	background-image: url(../images/bg-featured-text-content.png);
 }
 #page #body div#content p {
 	font-family:Georgia;
@@ -207,6 +209,8 @@ img:hover {
 	text-align:justify;
 	line-height:24px;
 	margin-bottom:25px;
+	background-image: url(../images/bg-featured-text-content.png);
+	background-size: cover;
 }
 #page #body div#content p a {
 	font-family:Georgia;
@@ -681,4 +685,12 @@ img:hover {
 	font-family:"Trebuchet MS";
 	color:#ffffff;
 	text-decoration:underline;
+}
+#page #body #content table tr td {
+	color: #FC3;
+	text-align: left;
+}
+#page #body #content table tr th {
+	color: #FC3;
+	text-align: center;
 }
