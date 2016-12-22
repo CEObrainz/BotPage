@@ -25,7 +25,7 @@ body,td,th {
 		<div id="header"></div>
 		<div id="body">
 		  <div id="content">
-            <h1>Installation and Configuration</h1>
+            <h1 id="#">Installation and Configuration</h1>
             <p>Luckily, installation is rather easy. Server owners can go <a href="index.html#Install">here</a>, click the links provided, follow the onscreen instructions and done! Just like that. </p>
             <p>So why do I have two bots?</p>
             <p>Albedo was first designed to be an entertainment bot, however as time passed and server owners requested more features this bot slowly became both a social bot and a utility bot.</p>
@@ -60,7 +60,37 @@ body,td,th {
               - Role Changes
             </p>
             <p>By default the log settings are turned off and need to be turned on with their respective toggle commands (e.g. Albedo logset deleteToggle). With all the log options the bot will require that a channel be specified first for logging.</p>
-            <p><br>
+            <h2>MassDM</h2>
+            <p>This module allows you to send a message to all members, with various options to specify who get's send a message and even customise the messages themselves. (Note, this should only be used sparingly as most people will see it as annoying.)</p>
+            <h2>Mass Move</h2>
+            <p>This module allows you to move people from one voice chat to another, although there are only a few reasons why you'd need to do this it can help when VC is really active.</p>
+            <h2>Mod</h2>
+            <p>The commands in this module are mostly self-explanatory and are part of the standard tools to help moderators and admins keep the server in order. Note, many of these commands require that the bot has the correct permisions otherwise an error message will appear.</p>
+            <h2>Punish</h2>
+            <p>This module was designed to help admins and moderators keep a channel in order. These are tools which help punish, keep track of punishments and prevent trolls from excessively breaking the rules. However it's important to note that these tools are not autonomous (at least not yet), it'll take good Moderators and Admins to help enforce your rules.</p>
+            <h4>Punish</h4>
+            <p>The punish command takes a user and gives them a special role that 'punishes them'. In this state they won't be able to access general channels, enter Voice Chat or use commands. A punishment can be set with a corresponding time (e.g. 5m = 5 minutes or 10d = 10 days.). A reason can also be supplied which is sent to the punished user.</p>
+            <h4>CPunish</h4>
+            <p>This command is similar to the punish command, however it has the added ability of deleting the last couple of messages that the punished user entered. This makes it useful to effeciently remove content that is not appropriate for your server.</p>
+            <h4>UnPunish</h4>
+            <p>This command works as the name suggests, unpunishing the user. This will remove the 'Punished' role and allow them to act as a normal user again.</p>
+            <h4>LsPunish</h4>
+            <p>This command allows mods and admins to see a list of users who are being punished, the length of time they have left, the user who punished them and the reason (if one was left).</p>
+            <h4>Warn</h4>
+            <p>This command allows mods and admins to warn users who believe that the offending user didn't do anything bad enough to warrant a punish but wants to officially tell them off anyway. Can be sent with or without a reason.</p>
+            <h4>Punishset (Punish Settings)</h4>
+            <p>Albedo allows Admins to set up a (or multiple) logging channels to keep records of all punishments on the server, similar to the logging tools mentioned above. Every time a new user is punished the channel will update (provided the bot has the right channel permissions).</p>
+            <h2>Roles</h2>
+            <p>Roles are a fun way to allow users to immerse themselves with the Discord community. The roles module has tools to allow all users to try and assign themselves any valid role. Admins can set which roles are assignable using the 'toggleAssign' command as well as making certain roles exclusive, preventing a user from adding two or more roles (of a certain type) when they are only allowed one. The update roles command should only be used when there are error messages and if even this doesn't fix the issue please contact the bot owner.</p>
+            <p>Note, it's important to make sure that users cannot give themselves roles with advanced permissions. This may result in severe misuse of the server, though ultimately the server owner can still put an end to that situation.</p>
+            <h2>Welcome</h2>
+            <p>Who doesn't like a nice welcome? The Welcome module allows admins to determine how new users are greeted when joining the server as well as any messages that are set when they leave. The messages are customizable and allow admins to enter user mentions, channel mentions and more. By default this is turned off.</p>
+            <h4>Lockdown</h4>
+            <p>The lockdown command is an anti-troll prevention system that allows admins and mods to prevent mass trolls from entering and distrubing the servers current enviroment. This works in tandem with the welcome system that allows for users to gain a role when joining the server. When the lockdown command is initiated all new users will gain any roles that are currently set to be added as well as the lockdown role which acts like a 'Punishment' and prevents those members from using normal features.</p>
+            <p>This state will persist no matter how many times the user leaves and joins, the welcome/leave messages also rerouting to the 'lockdown' channel (example name) to prevent spam in general/public channels.</p>
+            <p>New to this command is the watch feature as well as the watch settings. This allows an admin to keep track of users who join for a set amount of time. By default it's set to 30 minutes. If a lockdown is initialed any watched members will also be pulled into lockdown in a bid to catch potential trolls.</p>
+            <p>After that it's up to the admin/mods to use their best judgement on the situation.</p>
+            <p><a href="#">Go To Top</a><br>
             </p>
           </div>
 			<div id="sidebar">
