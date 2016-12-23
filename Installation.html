@@ -54,7 +54,7 @@ body,td,th {
                 <a href="#Lockdown">Lockdown</a><br>
               </li>
             </ol>
-            <h2 id="#Antilink">Antilink</h2>
+            <h2 id="Antilink">Antilink</h2>
             <p>This module allows you to prevent normal users from posting Discord Link to other servers. This is useful in scenarios where you want to allow links being posted but you don't allow server advertising. The settings allow you to toggle the feature on/off, toggle whether users get sent a private message when their post is deleted as well as setting the message that's sent.</p>
             <p>By default the toggle and toggledm options are set to false. This means you'll have to manually turn them on if you wish to use this feature.</p>
             <h2 id="Level">Level</h2>
@@ -63,7 +63,7 @@ body,td,th {
             <p>The Server Configuration options allow you to control global variables for your entire discord server. By default this feature is off , so to allow members to level up you'll need to use the toggle command (e.g. Albedo SC toggle). However it's recommend this be done after you have finished setting things up.</p>
             <p>The severEXP sub-command allows you to set up how much XP is gained per message. By default it's set to 1. It is recommended that you set this value in such a way that reaching the highest level takes a fair amount of time, giving users an incentive to stay active.</p>
             <p>The serverCD is used to help prevent users from spamming. This value is set to 60 seconds by default and has a lower custom limit of 5 seconds to prevent abuse.</p>
-            <p>The ranktoggle command is provided so that admins can assign whether certain roles are kept when reaching the next level. By default all roles are set to True, so that when a user levels up they they existing roles. However you may not want that, for example Level 2 giving users the role Copper and Level 3 awarding Silver. In this scenario both the Copper and Silver roles would be toggled to False so that a level up would remove the old role and add the new one, instead of having both Copper and Silver. Of course this is up to the Server Owners discretion.</p>
+            <p>The ranktoggle command is provided so that admins can assign whether certain roles are kept when reaching the next level. By default all roles are set to True, this means that when a user levels up they keep existing roles (the ones set to True). However you may not want that, for example if Level 2 gives users the Copper role and Level 3 awarding Silver. In this scenario both the Copper and Silver roles would be toggled to False so that a level up would remove the old role and add the new one, instead of having both Copper and Silver. Of course this is all up to the Server Owners discretion.</p>
             <h4 id="CC (Channel Config)">CC (Channel Config)</h4>
             <p>Similar to the SC group the Channel Configuration commands allows you to specify unique settings for individual channels. Of course the same limits apply here that the SC commands imposed. The channelCD and channelEXP commands work exactly like their server counterparts.</p>
             <p>The cp command is used to determine whether you want to give the channel unique settings. By default it's set to False. </p>
@@ -96,7 +96,7 @@ body,td,th {
             <p>The punish command takes a user and gives them a special role that 'punishes them'. In this state they won't be able to access general channels, enter Voice Chat or use commands. A punishment can be set with a corresponding time (e.g. 5m = 5 minutes or 10d = 10 days.). A reason can also be supplied which is sent to the punished user.</p>
             <h4 id="CPunish">CPunish</h4>
             <p>This command is similar to the punish command, however it has the added ability of deleting the last couple of messages that the punished user entered. This makes it useful to effeciently remove content that is not appropriate for your server.</p>
-            <h4>UnPunish</h4>
+            <h4 id="UnPunish">UnPunish</h4>
             <p>This command works as the name suggests, unpunishing the user. This will remove the 'Punished' role and allow them to act as a normal user again.</p>
             <h4 id="LsPunish">LsPunish</h4>
             <p>This command allows mods and admins to see a list of users who are being punished, the length of time they have left, the user who punished them and the reason (if one was left).</p>
